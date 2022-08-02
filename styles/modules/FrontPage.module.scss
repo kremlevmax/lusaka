@@ -1,0 +1,21 @@
+@use "../partials" as *;
+
+.front_page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.197), rgba(0, 0, 0, 0.5)),
+    url("../../images/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 690px;
+}
+
+.front_page__container {
+  @include container;
+  position: relative;
+  min-height: 690px;
+}
+
+.front_page__slogan {
+  max-width: 90%;
+  position: absolute;
+  bottom: 40px;
+}

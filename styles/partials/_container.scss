@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+
+  // @media (max-width: $breakpoint-mobile) {
+  //   max-width: 40%;
+  // }
+}

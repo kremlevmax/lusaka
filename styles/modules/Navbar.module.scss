@@ -1,0 +1,28 @@
+@use "../partials" as *;
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navbar__container {
+  @include container;
+  height: 100px;
+  align-items: center;
+}
+
+.navbar__buttons_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__logo {
+  font-size: 2em;
+}
+
+.navbar__button_secondary {
+  @include button;
+}

@@ -1,0 +1,43 @@
+@use "../partials" as *;
+
+.footer {
+  background-color: $additional;
+  min-height: 300px;
+}
+
+.footer__container {
+  @include container;
+  display: flex;
+}
+
+.footer__address_column {
+  flex: 1 1 auto;
+}
+
+.footer__address_column__address {
+  max-width: 150px;
+}
+
+.footer__column {
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address_column__title,
+.footer__column__title {
+  font-size: 1.4em;
+}
+
+.footer__address_column__title {
+  font-weight: 600;
+}
+
+.footer__column__link {
+  color: $button-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $button-color-hover;
+  }
+}
