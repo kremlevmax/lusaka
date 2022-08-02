@@ -13,7 +13,8 @@
   gap: 6em;
 }
 
-.details__line {
+.details__line,
+.details__line_oposite {
   display: flex;
   justify-content: space-between;
 }
@@ -27,10 +28,10 @@
   color: $text-color;
 
   h3 {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   p {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 }
 

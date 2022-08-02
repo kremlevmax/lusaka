@@ -30,7 +30,7 @@ function Details() {
             </Link>
           </div>
         </div>
-        <div className={styles.details__line}>
+        <div className={styles.details__line_oposite}>
           <div className={styles.details__desc}>
             <h3>Continuing Education for Teachers</h3>
             <p>

@@ -1,0 +1,17 @@
+@use "../partials" as *;
+
+.photo {
+  min-height: 400px;
+
+  margin-bottom: 4em;
+}
+
+.photo__container {
+  max-width: calc(1400px - 4em);
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.197), rgba(0, 0, 0, 0.5)),
+    url("../../images/04.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}

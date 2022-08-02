@@ -1,0 +1,14 @@
+@use "../partials" as *;
+
+.contacts {
+}
+
+.contacts__container {
+  @include container;
+  display: flex;
+
+  h2,
+  h4 {
+    color: black;
+  }
+}

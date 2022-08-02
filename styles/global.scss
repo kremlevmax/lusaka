@@ -37,11 +37,13 @@ p {
   font-weight: 300;
   line-height: 1.8;
   text-align: justify;
+  margin: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Roboto;
   font-weight: 500;
   color: $text-color;
@@ -50,20 +52,24 @@ h3 {
 
 h1 {
   font-size: 4rem;
-  line-height: 3.8rem;
+  line-height: 4rem;
   font-weight: 400;
 }
 
 h2 {
   font-size: 2.8rem;
-  line-height: 2.6rem;
+  line-height: 3.2rem;
 }
 
 h3 {
   font-size: 2.2rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 ul {
   list-style: none;
+}
+
+blockquote {
+  margin: 0;
 }
