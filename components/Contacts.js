@@ -14,9 +14,27 @@ const Contacts = () => {
         </div>
         <div className={styles.contacts__part}>
           <form>
-            <label>Name *</label>
-            <input type='text' id='first' name='first' />
-            <input type='text' id='last' name='last' />
+            <fieldset>
+              <legend>Name *</legend>
+              <label htmlFor='first'>
+                <input type='text' id='first' name='first' />
+                <span>First Name</span>
+              </label>
+              <label htmlFor='last'>
+                <input type='text' id='last' name='last' />
+                <span>Last Name</span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Email *</legend>
+              <input type='text' id='first' name='first' />
+            </fieldset>
+            <fieldset>
+              <legend>Message *</legend>
+              <textarea name='message' id='message'></textarea>
+            </fieldset>
+            <button>Submit</button>
           </form>
         </div>
       </div>
