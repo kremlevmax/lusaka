@@ -13,9 +13,9 @@ function Footer() {
             123 Demo Street New York, NY 12345
           </p>
           <p className={styles.footer__address_column__testimonials}>
-            Made with{" "}
-            <Link href='/index'>
-              <a className={styles.footer__column__link}>Squarespace</a>
+            Made by{" "}
+            <Link href='https://maxkremlev.dev/'>
+              <a className={styles.footer__column__link}>Max Kremlev</a>
             </Link>
           </p>
         </div>

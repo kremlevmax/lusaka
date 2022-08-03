@@ -11,14 +11,24 @@
   h2,
   h4 {
     color: black;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 2rem;
+
+    h2 {
+      text-align: center;
+    }
   }
 }
 
 .contacts__part {
   flex: 0 1 500px;
-  h2,
-  p {
-    margin-bottom: 1.5rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex: 0 1 auto;
   }
 
   fieldset {
@@ -30,7 +40,12 @@
     margin-bottom: 1.5rem;
 
     legend {
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 0.4rem;
     }
 
     textarea,
@@ -71,5 +86,6 @@
 
   button {
     @include button;
+    font-size: medium;
   }
 }

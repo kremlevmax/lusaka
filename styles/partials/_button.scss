@@ -8,6 +8,7 @@
   cursor: pointer;
 
   &:hover {
+    color: $text-color;
     background-color: $button-color-hover;
   }
 }

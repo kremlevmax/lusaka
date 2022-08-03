@@ -8,6 +8,11 @@
 .footer__container {
   @include container;
   display: flex;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 .footer__address_column {
@@ -22,6 +27,10 @@
   flex: 0 1 200px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex: 0 1 auto;
+  }
 }
 
 .footer__address_column__title,

@@ -6,8 +6,8 @@
 
 .details__container {
   @include container;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   display: flex;
   flex-direction: column;
   gap: 6em;
@@ -17,11 +17,27 @@
 .details__line_oposite {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+.details__line_oposite {
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .details__desc,
 .details__img_container {
   max-width: 45%;
+
+  @media (max-width: $breakpoint-mobile) {
+    max-width: 100%;
+  }
 }
 
 .details__desc {
