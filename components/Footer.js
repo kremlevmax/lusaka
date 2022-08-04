@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
-        <div className={styles.footer__address_column}>
+        <address className={styles.footer__address_column}>
           <p className={styles.footer__address_column__title}>
             The Lusaka Foundation
           </p>
@@ -18,7 +18,7 @@ function Footer() {
               <a className={styles.footer__column__link}>Max Kremlev</a>
             </Link>
           </p>
-        </div>
+        </address>
         <div className={styles.footer__column}>
           <p className={styles.footer__column__title}>About</p>
           <Link href='/ourvision'>

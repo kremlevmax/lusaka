@@ -1,0 +1,9 @@
+@use "../partials" as *;
+
+.ourteam {
+  margin-top: 100px;
+}
+
+.ourteam__container {
+  @include container;
+}
