@@ -1,0 +1,63 @@
+@use "../partials" as *;
+
+.hamburger {
+  display: none;
+  position: relative;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+
+    .burger_white,
+    .burger_black {
+      width: 2rem;
+      height: 0.25rem;
+      border-radius: 10px;
+      transform-origin: 1px;
+      transition: $link-transition;
+    }
+
+    .burger_white {
+      background: $text-color;
+    }
+
+    .burger_black {
+      background: $secondary;
+    }
+
+    .burger1open {
+      transform: rotate(45deg) translateY(1px);
+      width: 2.3rem;
+      height: 0.25rem;
+      border-radius: 10px;
+      background: $secondary;
+      transform-origin: 1px;
+      transition: $link-transition;
+    }
+
+    .burger2open {
+      transform: translateX(100%);
+      opacity: 0;
+      width: 2rem;
+      height: 0.25rem;
+      border-radius: 10px;
+      background: $text-color;
+      transform-origin: 1px;
+      transition: $link-transition;
+    }
+
+    .burger3open {
+      transform: rotate(-45deg) translateY(1px) translateX(-3px);
+      width: 2.3rem;
+      height: 0.25rem;
+      border-radius: 10px;
+      background: $secondary;
+      transform-origin: 1px;
+      transition: $link-transition;
+    }
+  }
+}

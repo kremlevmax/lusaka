@@ -21,7 +21,7 @@ function Footer() {
         </div>
         <div className={styles.footer__column}>
           <p className={styles.footer__column__title}>About</p>
-          <Link href='/our-vision'>
+          <Link href='/ourvision'>
             <a className={styles.footer__column__link}>Our Vision</a>
           </Link>
           <Link href='/donate'>
@@ -30,17 +30,17 @@ function Footer() {
         </div>
         <div className={styles.footer__column}>
           <p className={styles.footer__column__title}>Projects</p>
-          <Link href='/materials-for-learning'>
+          <Link href='/projects#materials-for-learning'>
             <a className={styles.footer__column__link}>
               Materials for Learning
             </a>
           </Link>
-          <Link href='/education-for-teachers'>
+          <Link href='/projects#education-for-teachers'>
             <a className={styles.footer__column__link}>
               Education for Teachers
             </a>
           </Link>
-          <Link href='/support-for-communities'>
+          <Link href='/projects#support-for-communities'>
             <a className={styles.footer__column__link}>
               Support for Communities
             </a>

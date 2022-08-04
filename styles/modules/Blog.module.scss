@@ -1,0 +1,39 @@
+@use "../partials" as *;
+
+.blog {
+  margin-top: 100px;
+
+  .blog__container {
+    @include container;
+    display: flex;
+    gap: 3rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+
+    .blog__post {
+      flex: 1 1 600px;
+      padding: 2rem;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      transition: $link-transition;
+      cursor: pointer;
+
+      &:hover {
+        // padding: 1.85rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      }
+
+      div {
+        .blog__post_desc_date {
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+
+        h3 {
+          color: black;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

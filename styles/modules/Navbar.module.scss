@@ -18,6 +18,18 @@
 .navbar__buttons_container {
   display: flex;
   gap: 2rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.navbar__button_black {
+  color: $secondary;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 .navbar__logo {
@@ -26,4 +38,13 @@
 
 .navbar__button_secondary {
   @include button;
+}
+
+.burger {
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+  }
 }

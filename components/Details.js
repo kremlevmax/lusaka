@@ -25,7 +25,7 @@ function Details() {
               students have access to current textbooks that are age appropriate
               and written in their primary language.
             </p>
-            <Link href='/materials-for-learning'>
+            <Link href='/projects#materials-for-learning'>
               <a className={styles.details__button}>Learn More</a>
             </Link>
           </div>
@@ -39,7 +39,7 @@ function Details() {
               the latest technology to new pedagogical methods, we help teachers
               make their classrooms engaging and successful.
             </p>
-            <Link href='/education-for-teachers'>
+            <Link href='/projects#education-for-teachers'>
               <a className={styles.details__button}>Learn More</a>
             </Link>
           </div>
@@ -66,7 +66,7 @@ function Details() {
               approach extends beyond the school to help ensure students have
               the necessary support to do their best learning.
             </p>
-            <Link href='/support-for-communities'>
+            <Link href='/projects#support-for-communities'>
               <a className={styles.details__button}>Learn More</a>
             </Link>
           </div>

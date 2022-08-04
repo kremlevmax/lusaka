@@ -1,0 +1,64 @@
+@use "../partials" as *;
+
+.projects {
+  margin-top: 100px;
+
+  .projects__container {
+    @include container;
+
+    .project {
+      margin-bottom: 6rem;
+
+      .project__img {
+        background-position: center;
+        background-size: cover;
+        min-height: 400px;
+        margin-bottom: 6rem;
+      }
+
+      #img_first {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.197),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../../images/01_large.jpeg");
+      }
+
+      #img_second {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.197),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../../images/02_large.jpeg");
+      }
+
+      #img_third {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.197),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../../images/03_large.jpeg");
+      }
+
+      &:last-child {
+        margin-bottom: 8rem;
+      }
+
+      h3 {
+        color: black;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        max-width: 800px;
+        margin: 0 auto 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

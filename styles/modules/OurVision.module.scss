@@ -1,0 +1,35 @@
+@use "../partials" as *;
+
+.ourvision {
+  margin-top: 100px;
+
+  .ourvision__container {
+    @include container;
+    display: flex;
+    gap: 4rem;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column-reverse;
+    }
+
+    .ourvision__text {
+      flex: 2 1 auto;
+      h2 {
+        color: black;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      span {
+        font-style: italic;
+      }
+    }
+  }
+}

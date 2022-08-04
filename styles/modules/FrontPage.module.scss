@@ -18,4 +18,10 @@
   max-width: 90%;
   position: absolute;
   bottom: 40px;
+
+  @media (max-width: $breakpoint-mobile) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }
