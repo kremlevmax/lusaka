@@ -30,8 +30,8 @@
     }
 
     .burger1open {
-      transform: rotate(45deg) translateY(1px);
-      width: 2.3rem;
+      transform: rotate(45deg) translateX(-3px) translateY(-2px);
+      width: 2.8rem;
       height: 0.25rem;
       border-radius: 10px;
       background: $secondary;
@@ -51,8 +51,8 @@
     }
 
     .burger3open {
-      transform: rotate(-45deg) translateY(1px) translateX(-3px);
-      width: 2.3rem;
+      transform: rotate(-46deg) translateY(3px) translateX(-3px);
+      width: 2.8rem;
       height: 0.25rem;
       border-radius: 10px;
       background: $secondary;
