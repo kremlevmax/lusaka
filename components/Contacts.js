@@ -13,28 +13,28 @@ const Contacts = () => {
           <p>(555) 555-5555</p>
         </div>
         <div className={styles.contacts__part}>
-          <form>
+          <form action='https://formspree.io/f/xknewyon' method='POST'>
             <fieldset>
               <legend>Name *</legend>
               <label htmlFor='first'>
-                <input type='text' id='first' name='first' />
+                <input type='text' id='first' name='first name' />
                 <span>First Name</span>
               </label>
               <label htmlFor='last'>
-                <input type='text' id='last' name='last' />
+                <input type='text' id='last' name='last name' />
                 <span>Last Name</span>
               </label>
             </fieldset>
 
             <fieldset>
               <legend>Email *</legend>
-              <input type='text' id='first' name='first' />
+              <input type='text' id='email' name='email' />
             </fieldset>
             <fieldset>
               <legend>Message *</legend>
               <textarea name='message' id='message'></textarea>
             </fieldset>
-            <button>Submit</button>
+            <button type='submit'>Submit</button>
           </form>
         </div>
       </div>
