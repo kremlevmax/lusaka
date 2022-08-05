@@ -26,7 +26,7 @@ const BurgerMenu = () => {
           </Link>
         </li>
         <li>
-          <Link href='/blog'>
+          <Link href='/donate'>
             <a className={styles.navbar__button_secondary}>Donate</a>
           </Link>
         </li>
