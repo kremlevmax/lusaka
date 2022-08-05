@@ -1,0 +1,27 @@
+@use "../partials" as *;
+
+.donate {
+  margin-top: 100px;
+
+  .donate__container {
+    @include container;
+    display: flex;
+    gap: 4rem;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column-reverse;
+    }
+
+    .donate__text {
+      flex: 2 1 auto;
+      h2 {
+        color: black;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
